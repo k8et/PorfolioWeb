@@ -3,12 +3,12 @@ import {programmingData, toolsData} from "../utils/mock";
 
 const Skills = () => {
     return (
-        <div id='#skills' className='flex flex-col items-center w-full h-screen justify-center bg-tahiti-100 gap-20'>
+        <div id='#skills' className='flex flex-col items-center h-screen justify-center bg-tahiti-100 gap-20 '>
             <div className='w-screen h-12 flex flex-col items-center justify-center gap-1'>
                 <h1 className='text-3xl text-white'>Skills</h1>
                 <p className='text-1xl text-tahiti-200'>My Technical level</p>
             </div>
-            <div className='flex flex-wrap gap-10 item-center justify-center'>
+            <div className='flex flex-wrap gap-10 w-6/12 item-center justify-center md:w-screen'>
                 <div className='flex flex-col item-center justify-center w-80 h-80 bg-tahiti-500 rounded-3xl gap-5'>
                     <h1 className='flex text-xl justify-center text-white font-medium'>Languages and technologies</h1>
                     <div className="flex flex-wrap gap-1 item-center justify-center">

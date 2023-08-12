@@ -1,3 +1,15 @@
+// @ts-ignore
+import Bank from '../assets/img/Bank.png'
+// @ts-ignore
+import Stuff from '../assets/img/Stuff.png'
+// @ts-ignore
+import Medical from '../assets/img/Medical.png'
+// @ts-ignore
+import Crypto from '../assets/img/Crypto.png'
+// @ts-ignore
+import Rick from '../assets/img/Rick.png'
+// @ts-ignore
+import Star from '../assets/img/Star.png'
 export const mockNavigationItems = [
     '#home',
     '#about',
@@ -59,29 +71,44 @@ export const toolsData = [
 export const portfolioData = [
     {
         category: 'web',
-        imageSrc: "placeholder_image1.jpg",
-        title: "AI Summarizer 1",
-        link: "#"
+        imageSrc: Bank,
+        title: "Bank",
+        DemoLink: "https://bank-57867.web.app/",
+        GitLink: "https://github.com/k8et/Loayal-Bank"
     },
     {
-        imageSrc: "placeholder_image1.jpg",
-        title: "AI Summarizer 1",
-        link: "#"
-    }, {
-        category: 'design',
-        imageSrc: "placeholder_image1.jpg",
-        title: "AI Summarizer 1",
-        link: "#"
-    }, {
-        category: 'design',
-        imageSrc: "placeholder_image1.jpg",
-        title: "AI Summarizer 1",
-        link: "#"
+        category: 'web',
+        imageSrc: Stuff,
+        title: "Stuff",
+        DemoLink: "https://main--chic-caramel-7afa4b.netlify.app/",
+        GitLink: "https://github.com/k8et/Stuff-Shop"
     }, {
         category: 'web',
-        imageSrc: "placeholder_image1.jpg",
-        title: "AI Summarizer 1",
-        link: "#"
+        imageSrc: Medical,
+        title: "Medical",
+        DemoLink: "https://my-medical-project-2fab3.web.app/",
+        GitLink: "https://github.com/k8et/Medical"
+    },
+    {
+        category: 'web',
+        imageSrc: Crypto,
+        title: "Crypto",
+        DemoLink: "https://exquisite-chaja-caffc6.netlify.app/",
+        GitLink: "https://github.com/k8et/Crypto"
+    },
+    {
+        category: 'design',
+        imageSrc: Star,
+        title: "Star Wars",
+        DemoLink: "https://main--musical-gelato-71980a.netlify.app/",
+        GitLink: "https://github.com/k8et/Star-Wars"
+    },
+    {
+        category: 'design',
+        imageSrc: Rick,
+        title: "Rick and Morty",
+        DemoLink: "https://main--precious-kulfi-46535f.netlify.app/",
+        GitLink: "https://github.com/k8et/Rick-and-Morty"
     },
 ]
 export const portfolioTabData = [

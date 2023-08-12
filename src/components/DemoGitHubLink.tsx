@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {FC} from "react";
 
-const WorkButton = styled.a`
+const WorkButton = styled.div`
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -18,14 +18,23 @@ const WorkButtonIcon = styled.i`
   font-size: 1rem;
   transition: 0.4s;
 `;
+
+
 interface DemoGitHubLinkProps {
-    deploymentLink: string
+    deploymentLink: string;
+    githubLink: string;
 }
-const DemoGitHubLink:FC<DemoGitHubLinkProps> = ({deploymentLink}) => {
+
+const DemoGitHubLink: FC<DemoGitHubLinkProps> = ({deploymentLink, githubLink}) => {
     return (
-        <WorkButton href={deploymentLink} target="_blank" rel="noreferrer">
-            Demo/GitHub <WorkButtonIcon className="bx bx-right-arrow-alt work__button-icon"/>
-        </WorkButton>
+        <div>
+            <WorkButton>
+                <a href={deploymentLink} className='hover:text-white transition ease-in-out duration-300' target="_blank" rel="noreferrer">Demo</a>
+                |
+                <a href={githubLink} className='hover:text-white transition ease-in-out duration-300' target="_blank" rel="noreferrer">GitHub</a>
+                <WorkButtonIcon className="bx bx-right-arrow-alt work__button-icon"/>
+            </WorkButton>
+        </div>
     );
 };
 

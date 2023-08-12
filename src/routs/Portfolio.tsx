@@ -9,7 +9,7 @@ const Portfolio = () => {
     };
 
     return (
-        <div id='#portfolio' className='flex flex-col items-center w-full h-screen h-full justify-center bg-tahiti-100 gap-20 pt-20'>
+        <div id='#portfolio' className='flex flex-col items-center w-full h-full justify-center bg-tahiti-100 gap-20 pt-20'>
             <div className='w-screen h-12 flex flex-col items-center justify-center gap-1'>
                 <h1 className='text-3xl text-white'>Portfolio</h1>
                 <p className='text-1xl text-tahiti-200'>Most Recent Project</p>
@@ -28,19 +28,21 @@ const Portfolio = () => {
                         </button>
                     ))}
                 </div>
-                <div className='flex flex-wrap h-full justify-center gap-10 mb-8 w-6/12'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mb-8'>
                     {portfolioData.map((item, index) => (
                         (activeTab === 'all' || activeTab === item.category) && (
                             <div key={index} className='flex flex-col justify-center pl-10 w-80 h-60 bg-tahiti-500 rounded-2xl gap-2'>
-                                <img className='w-60 h-36 bg-white rounded-2xl' src={item.imageSrc} alt={item.title} />
+                                <img className='w-60 h-36 rounded-2xl' src={item.imageSrc} alt={item.title} />
                                 <div>
                                     <h3 className='text-lg text-white'>{item.title}</h3>
-                                    <DemoGitHubLink deploymentLink={item.link} />
+                                    <DemoGitHubLink githubLink={item.GitLink} deploymentLink={item.DemoLink} />
                                 </div>
                             </div>
                         )
                     ))}
                 </div>
+
+
             </div>
         </div>
     );

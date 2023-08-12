@@ -3,6 +3,7 @@ import {HomeImage} from '../components/Image';
 import ScrollDown from "../components/Scroll Down";
 import {HomeProps} from "../interfaces/HomeProps";
 import StyledLink from "../components/StyledLink";
+import Send from "../assets/svg/send";
 
 
 const Home:FC<HomeProps> = (props) => {
@@ -22,7 +23,7 @@ const Home:FC<HomeProps> = (props) => {
                         A results-driven, enthusiastic, creative Web Developer with excellent communication skills,
                         ready to give my best to achieve remarkable outcomes.
                     </p>
-                    <StyledLink width='150px' height='50px'> Contact <i className='bx bx-down-arrow-alt'></i></StyledLink>
+                    <StyledLink width='150px' height='50px'> Contact <Send/></StyledLink>
                 </div>
                 <div className='flex items-center xl:pl-10'>
                     <HomeImage/>
