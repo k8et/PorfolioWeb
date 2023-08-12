@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
-import Home from "./components/Home";
+import Home from "./routs/Home";
 import Header from "./components/Header";
-import About from "./components/About";
-import { useMediaQuery } from "react-responsive";
-import { scroller } from "react-scroll";
+import About from "./routs/About";
+import {useMediaQuery} from "react-responsive";
+import {scroller} from "react-scroll";
+import Skills from "./routs/Skills";
+import Qualification from "./routs/Qualification";
+import Portfolio from "./routs/Portfolio";
+import Contact from "./routs/Contact";
 
 function App() {
-    const isLaptop = useMediaQuery({ query: '(max-width: 1280px)' });
+    const isLaptop = useMediaQuery({query: '(max-width: 1280px)'});
     const [activeNav, setActiveNav] = useState<string>("#home");
     const [isBurgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
 
@@ -32,7 +36,13 @@ function App() {
                 setActiveNav("#home");
             } else if (currentPosition < 1400) {
                 setActiveNav("#about");
-            } else {
+            } else if (currentPosition < 2100) {
+                setActiveNav("#skills");
+            } else if (currentPosition < 2800) {
+                setActiveNav("#qualification");
+            } else if (currentPosition < 4200) {
+                setActiveNav("#portfolio");
+            }else {
                 setActiveNav("#contact");
             }
         };
@@ -50,6 +60,10 @@ function App() {
             <main className="main">
                 <Home handleSmoothScroll={handleSmoothScroll} activeNav={activeNav} isLaptop={isLaptop}/>
                 <About/>
+                <Skills/>
+                <Qualification/>
+                <Portfolio/>
+                <Contact/>
             </main>
         </>
     );

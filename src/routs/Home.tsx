@@ -1,8 +1,8 @@
 import React, {FC} from 'react';
-import {HomeImage} from './Image';
-import ScrollDown from "./Scroll Down";
+import {HomeImage} from '../components/Image';
+import ScrollDown from "../components/Scroll Down";
 import {HomeProps} from "../interfaces/HomeProps";
-import StyledLink from "./StyledLink";
+import StyledLink from "../components/StyledLink";
 
 
 const Home:FC<HomeProps> = (props) => {

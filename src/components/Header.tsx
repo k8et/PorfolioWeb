@@ -36,6 +36,7 @@ const Header: FC<HeaderProps> = (props) => {
                                     >
                                         <i className="uil uil-estate nav__icon"></i>
                                         <a
+                                            className='font-medium'
                                             href={navItem}
                                             onClick={() => handleSmoothScroll(navItem)}
                                         >
@@ -53,7 +54,7 @@ const Header: FC<HeaderProps> = (props) => {
                         <a
                             key={navItem}
                             href={navItem}
-                            className={`flex w-20 h-20 flex-col items-center justify-center bg-tahiti-100 
+                            className={`flex w-20 font-medium flex-col items-center justify-center bg-tahiti-100 
                             hover:text-tahiti-400 ease-in-out duration-300 ${
                                 activeNav === navItem ? 'text-tahiti-400' : ''
                             }`}

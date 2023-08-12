@@ -27,7 +27,7 @@ const AboutImg = styled.img`
 `;
 
 const AboutBox = styled.div`
-  background-color: ${({theme}) => theme.containerColor};
+  background-color: #1f314f;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
   text-align: center;
