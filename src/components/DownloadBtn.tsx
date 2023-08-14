@@ -1,22 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 // @ts-ignore
 import CV from '../assets/Res.pdf';
 import StyledLink from "./StyledLink";
-
-const StyledDownloadBtn = styled.a`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-
-`;
-
-const ButtonIcon = styled.svg`
-  width: 24px;
-  height: 24px;
-  fill: white;
-  margin-left: 8px;
-`;
+import {ButtonIcon, StyledDownloadBtn} from "../styles/DownloadBtnStyle";
 
 const DownloadBtn = () => {
     return (

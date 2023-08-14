@@ -10,13 +10,32 @@ import Crypto from '../assets/img/Crypto.png'
 import Rick from '../assets/img/Rick.png'
 // @ts-ignore
 import Star from '../assets/img/Star.png'
+
 export const mockNavigationItems = [
-    '#home',
-    '#about',
-    '#skills',
-    '#qualification',
-    '#portfolio',
-    '#contact',
+    {
+        icon: "uil uil-estate ",
+        nav: '#home',
+    },
+    {
+        icon: "uil uil-user ",
+        nav: '#about',
+    },
+    {
+        icon: "uil uil-file-alt ",
+        nav: '#skills',
+    },
+    {
+        icon: "uil uil-briefcase-alt ",
+        nav: '#qualification',
+    },
+    {
+        icon: "uil uil-scenery ",
+        nav: '#portfolio',
+    },
+    {
+        icon: "uil uil-message ",
+        nav: '#contact',
+    },
 ];
 export const tabContent = [
     {
@@ -25,6 +44,7 @@ export const tabContent = [
         title: "HTU 'KHPI'",
         subtitle: "Energy / computer engineering",
         date: "10/2020 — present",
+        icon: "uil uil-user nav__icon"
     },
     {
         id: 2,
@@ -125,3 +145,23 @@ export const portfolioTabData = [
         title: 'Design'
     },
 ]
+export const contactMethods = [
+    {
+        icon: 'bx bx-mail-send',
+        title: 'Email',
+        text: 'mxmgnchrv@gmail.com',
+        link: 'mailto:mxmgnchrv@gmail.com',
+    },
+    {
+        icon: 'bx bxl-whatsapp',
+        title: 'WhatsApp',
+        text: '+380685339687',
+        link: 'https://api.whatsapp.com/send?phone=380685339687&text=Hello,%20more%20information!',
+    },
+    {
+        icon: 'bx bxl-telegram',
+        title: 'Telegram',
+        text: '@mxmgnchrv',
+        link: 'https://t.me/mxmgnchrv',
+    },
+];

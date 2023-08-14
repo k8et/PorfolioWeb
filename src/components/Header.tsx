@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {HeaderProps} from "../interfaces/HeaderProps";
 import {mockNavigationItems} from "../utils/mock";
-
+import {GradientText} from "../styles/HeaderStyle";
 const Header: FC<HeaderProps> = (props) => {
     const {
         isLaptop,
@@ -13,34 +13,34 @@ const Header: FC<HeaderProps> = (props) => {
 
     return (
         <div
-            className={`bg-tahiti-100 z-10 w-full h-12 text-white flex items-center ${
+            className={`bg-tahiti-100 z-10 w-full h-12 text-white flex items-center z-20 ${
                 isLaptop ? 'justify-between p-5' : 'justify-around'
             } fixed ${isLaptop ? 'bottom-0' : 'top-0'}`}
         >
-            <h3>Maksym</h3>
+            <GradientText>Maksym</GradientText>
             {isLaptop ? (
                 <div>
                     <button onClick={toggleBurgerMenu} className="text-white">
                         ☰
                     </button>
                     {isBurgerMenuOpen && (
-                        <div className="w-screen z-10 absolute bottom-0 left-0 bg-tahiti-100 h-20 ">
-                            <div className="flex justify-around">
-                                {mockNavigationItems.map((navItem) => (
+                        <div className="w-screen z-10 absolute bottom-0 left-0 bg-tahiti-100 h-40 ">
+                            <div className="flex flex-wrap w-full h-full bg-white">
+                                {mockNavigationItems.map((navItem,index) => (
                                     <div
-                                        key={navItem}
-                                        className={`flex w-20 h-20 flex-col items-center justify-center bg-tahiti-100 
+                                        key={index}
+                                        className={`flex w-20 h-20 flex-col w-4/12 items-center justify-center bg-tahiti-100 
                                         hover:text-tahiti-400 ease-in-out duration-300 ${
-                                            activeNav === navItem ? 'text-tahiti-400' : ''
+                                            activeNav === navItem.nav ? 'text-tahiti-400' : ''
                                         }`}
                                     >
-                                        <i className="uil uil-estate nav__icon"></i>
+                                        <i className={navItem.icon}></i>
                                         <a
                                             className='font-medium'
-                                            href={navItem}
-                                            onClick={() => handleSmoothScroll(navItem)}
+                                            href={navItem.nav}
+                                            onClick={() => handleSmoothScroll(navItem.nav)}
                                         >
-                                            {navItem.slice(1).charAt(0).toUpperCase() + navItem.slice(2)}
+                                            {navItem.nav.slice(1).charAt(0).toUpperCase() + navItem.nav.slice(2)}
                                         </a>
                                     </div>
                                 ))}
@@ -50,17 +50,17 @@ const Header: FC<HeaderProps> = (props) => {
                 </div>
             ) : (
                 <div className="flex  gap-10">
-                    {mockNavigationItems.map((navItem) => (
+                    {mockNavigationItems.map((navItem,index) => (
                         <a
-                            key={navItem}
-                            href={navItem}
+                            key={index}
+                            href={navItem.nav}
                             className={`flex w-20 font-medium flex-col items-center justify-center bg-tahiti-100 
                             hover:text-tahiti-400 ease-in-out duration-300 ${
-                                activeNav === navItem ? 'text-tahiti-400' : ''
+                                activeNav === navItem.nav ? 'text-tahiti-400' : ''
                             }`}
-                            onClick={() => handleSmoothScroll(navItem)}
+                            onClick={() => handleSmoothScroll(navItem.nav)}
                         >
-                            {navItem.slice(1).charAt(0).toUpperCase() + navItem.slice(2)}
+                            {navItem.nav.slice(1).charAt(0).toUpperCase() + navItem.nav.slice(2)}
                         </a>
                     ))}
                 </div>

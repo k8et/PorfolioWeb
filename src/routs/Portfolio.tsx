@@ -15,7 +15,7 @@ const Portfolio = () => {
                 <p className='text-1xl text-tahiti-200'>Most Recent Project</p>
             </div>
             <div className='flex flex-col justify-center items-center gap-10'>
-                <div className='flex gap-5 justify-center'>
+                <div className='flex gap-5 justify-center z-10'>
                     {portfolioTabData.map((tab, index) => (
                         <button
                             key={index}
@@ -28,7 +28,7 @@ const Portfolio = () => {
                         </button>
                     ))}
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mb-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 z-10 gap-10 mb-8'>
                     {portfolioData.map((item, index) => (
                         (activeTab === 'all' || activeTab === item.category) && (
                             <div key={index} className='flex flex-col justify-center pl-10 w-80 h-60 bg-tahiti-500 rounded-2xl gap-2'>
@@ -41,8 +41,6 @@ const Portfolio = () => {
                         )
                     ))}
                 </div>
-
-
             </div>
         </div>
     );

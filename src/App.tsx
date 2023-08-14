@@ -9,12 +9,12 @@ import Skills from "./routs/Skills";
 import Qualification from "./routs/Qualification";
 import Portfolio from "./routs/Portfolio";
 import Contact from "./routs/Contact";
+import ParticlesCon from "./components/ParticlesCon";
 
 function App() {
     const isLaptop = useMediaQuery({query: '(max-width: 1280px)'});
     const [activeNav, setActiveNav] = useState<string>("#home");
     const [isBurgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
-
     const handleSmoothScroll = (target: string) => {
         scroller.scrollTo(target, {
             smooth: true,
@@ -59,6 +59,7 @@ function App() {
                     toggleBurgerMenu={toggleBurgerMenu} isLaptop={isLaptop}/>
             <main className="main">
                 <Home handleSmoothScroll={handleSmoothScroll} activeNav={activeNav} isLaptop={isLaptop}/>
+                <ParticlesCon/>
                 <About/>
                 <Skills/>
                 <Qualification/>

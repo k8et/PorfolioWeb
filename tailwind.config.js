@@ -4,8 +4,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'white': '#ffffff',
-      'tahiti': {
+      white: '#ffffff',
+      tahiti: {
         100: '#0F1624',
         200: '#a4a2a2',
         300: '#1c273d',
@@ -16,9 +16,17 @@ module.exports = {
         800: '#155e75',
         900: '#164e63',
       },
-      extend: {
+      blue: {
+        400: '#03a9f4',
+      },
+      pink: {
+        500: '#f441a5',
+      },
+      yellow: {
+        300: '#ffeb3b',
       },
     },
-    plugins: [],
-  }
-}
+    extend: {},
+  },
+  plugins: [],
+};

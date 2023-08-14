@@ -1,4 +1,6 @@
+import { FC } from "react";
 import styled, { keyframes } from 'styled-components';
+import { HomeImageProps } from "../interfaces/HomeImageProps";
 
 const profileAnimation = keyframes`
   0% {
@@ -12,8 +14,9 @@ const profileAnimation = keyframes`
   }
 `;
 
-export const HomeImage = styled.div`
+export const HomeImage: FC<HomeImageProps> = styled.div`
   background-repeat: no-repeat;
+  z-index: 10;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
@@ -23,5 +26,6 @@ export const HomeImage = styled.div`
   height: 300px;
   animation: ${profileAnimation} 8s ease-in-out infinite 1s;
   filter: saturate(1);
+  background-image: ${props => `url(${props.backgroundImage})`};
 `;
 
