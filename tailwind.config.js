@@ -16,8 +16,8 @@ module.exports = {
         800: '#155e75',
         900: '#164e63',
       },
-      blue: {
-        400: '#03a9f4',
+      whiteBlack: {
+        400: '#1c1c1c',
       },
       pink: {
         500: '#f441a5',

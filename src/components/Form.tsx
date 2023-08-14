@@ -17,7 +17,7 @@ const Form = () => {
         setIsAlertVisible(false);
     }
 
-    function submitForm(event: React.FormEvent) {
+    const submitForm = (event: React.FormEvent) => {
         event.preventDefault();
 
         const message = `
