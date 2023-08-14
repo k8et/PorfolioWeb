@@ -27,7 +27,7 @@ const Home: FC<HomeProps> = (props) => {
                     </a>
                 </div>
                 <div className='flex items-center flex-col justify-center gap-5'>
-                    <h1 className='text-2xl xl:text-3xl font-bold text-white'>
+                    <h1 className='flex items-center justify-center font-bold w-80 text-white text-3xl'>
                         Maksym Honcharov
                     </h1>
                     <p className='text-sm xl:text-base text-tahiti-200'>
@@ -37,7 +37,8 @@ const Home: FC<HomeProps> = (props) => {
                         A results-driven, enthusiastic, creative Web Developer with excellent communication skills,
                         ready to give my best to achieve remarkable outcomes.
                     </p>
-                    <StyledLink width='150px' height='50px' onClick={() => handleSmoothScroll("#contact")}> Contact <Send/></StyledLink>
+                    <StyledLink width='150px' height='50px'
+                                onClick={() => handleSmoothScroll("#contact")}> Contact <Send/></StyledLink>
                 </div>
                 <div className='flex items-center xl:pl-10'>
                     <HomeImage backgroundImage={img}/>
