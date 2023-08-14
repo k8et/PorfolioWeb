@@ -1,6 +1,6 @@
 import React from 'react';
 // @ts-ignore
-import CV from '../assets/Res.pdf';
+import CV from '../assets/C_V.pdf';
 import StyledLink from "./StyledLink";
 import {ButtonIcon, StyledDownloadBtn} from "../styles/DownloadBtnStyle";
 
