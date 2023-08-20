@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <div id='#contact'
              className=' flex flex-col items-center pt-24 h-full justify-center bg-tahiti-100 gap-20 pb-20 md:h-screen
-             md:pt-0 '>
+             md:pt-20 '>
             <div className='w-screen h-12 flex flex-col items-center justify-center gap-1'>
                 <h1 className='text-3xl text-white'>Get in Touch</h1>
                 <p className='text-1xl text-tahiti-200'>Contact Me</p>
