@@ -10,6 +10,8 @@ import Crypto from '../assets/img/Crypto.png'
 import Rick from '../assets/img/Rick.png'
 // @ts-ignore
 import Star from '../assets/img/Star.png'
+// @ts-ignore
+import Music from '../assets/img/music.png'
 
 export const mockNavigationItems = [
     {
@@ -63,17 +65,17 @@ export const tabContent = [
     {
         id: 4,
         category: 'experience',
-        title: "Belkins Inc",
+        title: "NWS Studio",
         subtitle: "React Developer",
-        date: "06/2022-01/2023",
+        date: "12/2022-Present",
     }
 ];
 export const programmingData = [
     {name: 'HTML', level: 'Advanced'},
     {name: 'CSS', level: 'Intermediate'},
     {name: 'SASS', level: 'Intermediate'},
-    {name: 'JavaScript', level: 'Upper-Intermediate'},
-    {name: 'TypeScript', level: 'Intermediate'},
+    {name: 'JavaScript', level: 'Intermediate'},
+    {name: 'TypeScript', level: 'Upper-Intermediate'},
     {name: 'Tailwind', level: 'Intermediate'},
     {name: 'Figma', level: 'Intermediate'},
     {name: 'Git/GitHub', level: 'Intermediate'},
@@ -82,13 +84,20 @@ export const toolsData = [
     {name: 'Firebase', level: 'Intermediate'},
     {name: 'Webpack', level: 'Intermediate'},
     {name: 'Parcel', level: 'Intermediate'},
-    {name: 'React Router', level: 'Upper-Intermediate'},
+    {name: 'React Native', level: 'Intermediate'},
     {name: 'Axios', level: 'Intermediate'},
     {name: 'React', level: 'Advanced'},
     {name: 'Redux', level: 'Beginner'},
     {name: 'Mobx', level: 'Intermediate'},
 ];
 export const portfolioData = [
+    {
+        category: 'web',
+        imageSrc: Music,
+        title: "Music",
+        DemoLink: "https://main--wonderful-beijinho-fdc402.netlify.app/",
+        GitLink: "https://github.com/k8et/music"
+    },
     {
         category: 'web',
         imageSrc: Bank,

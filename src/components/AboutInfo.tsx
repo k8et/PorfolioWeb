@@ -10,8 +10,10 @@ import {
     AboutInfoContainer,
 } from '../styles/AboutInfoStyle';
 import DownloadBtn from "./DownloadBtn";
+import {useMediaQuery} from "react-responsive";
 
 const AboutSection = () => {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1243px)' })
     return (
         <AboutContainer>
             <InfoDescription>
@@ -32,13 +34,11 @@ const AboutSection = () => {
                         <AboutSubtitle>Everytime</AboutSubtitle>
                     </AboutBox>
                 </AboutInfoContainer>
-                <AboutDescription>
-                    I am Maksym Honcharov, Frontend Developer with a strong foundation in Frontend <br/> development. My
-                    journey
-                    in the tech industry began in October 2020 when I <br/> embarked on a journey into Computer Engineering at
-                    HTY
-                    "KHPI." Since then, I've <br/> dedicated myself to honing my programming skills and working on various
-                    exciting <br/> projects.
+                <AboutDescription style={{width: !isTabletOrMobile ? '50%' : '80%'}}>
+                    I am Maksym Honcharov, a dedicated Frontend Developer with a background in frontend development. My
+                    journey in the technology industry commenced in October 2020 when I embarked on the path of Computer
+                    Engineering at HTY "KHPI." Since then, I have been unwaveringly committed to refining my programming
+                    prowess while actively contributing to a diverse range of stimulating projects.
                 </AboutDescription>
                 <DownloadBtn/>
             </InfoDescription>

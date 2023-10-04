@@ -19,7 +19,7 @@ export const HomeImage: FC<HomeImageProps> = styled.div`
   z-index: 10;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 9px rgba(3, 5, 115, 0.3);
   order: 1;
   justify-content: center;
   width: 300px;
