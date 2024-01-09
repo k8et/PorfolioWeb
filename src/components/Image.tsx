@@ -1,6 +1,5 @@
-import { FC } from "react";
+import React, { ReactNode } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { HomeImageProps } from "../interfaces/HomeImageProps";
 
 const profileAnimation = keyframes`
   0% {
@@ -14,18 +13,32 @@ const profileAnimation = keyframes`
   }
 `;
 
-export const HomeImage: FC<HomeImageProps> = styled.div`
+const StyledHomeImage = styled.div`
   background-repeat: no-repeat;
-  z-index: 10;
+  z-index: 1000;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 9px rgba(3, 5, 115, 0.3);
+  box-shadow: inset 0 0 0 9px rgba(253, 253, 253, 0.3);
   order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   animation: ${profileAnimation} 8s ease-in-out infinite 1s;
   filter: saturate(1);
-  background-image: ${props => `url(${props.backgroundImage})`};
 `;
 
+interface HomeImageProps {
+    children?: ReactNode;
+}
+
+const HomeImage: React.FC<HomeImageProps> = ({ children }) => {
+    return <StyledHomeImage>{children}</StyledHomeImage>;
+};
+
+export default HomeImage;

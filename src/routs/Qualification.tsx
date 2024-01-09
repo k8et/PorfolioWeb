@@ -8,7 +8,7 @@ const Qualification = () => {
     };
     return (
         <div id="#qualification"
-             className="flex flex-col items-center w-full h-full justify-center bg-tahiti-100 gap-20 p-20 md:p-0 md:h-screen">
+             className="flex flex-col items-center w-full h-screen justify-center bg-tahiti-100 gap-20 p-20 md:p-0 md:h-screen">
             <div className='w-screen h-12 flex flex-col items-center justify-center gap-1'>
                 <h1 className='text-3xl text-white'>Qualification</h1>
                 <p className='text-1xl text-tahiti-200'>My Personal journey</p>

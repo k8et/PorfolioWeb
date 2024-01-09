@@ -38,7 +38,7 @@ function App() {
                 setActiveNav("#about");
             } else if (currentPosition < 2100) {
                 setActiveNav("#skills");
-            } else if (currentPosition < 2800) {
+            } else if (currentPosition < 2700) {
                 setActiveNav("#qualification");
             } else if (currentPosition < 4200) {
                 setActiveNav("#portfolio");
