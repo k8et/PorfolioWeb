@@ -4,7 +4,7 @@ import {programmingData, toolsData} from "../utils/mock";
 const Skills = () => {
     return (
         <div id='#skills'
-             className='flex flex-col items-center w-full h-full justify-center bg-tahiti-100 gap-20 md:w-screen p-20 xl:pt-0'>
+             className='flex flex-col items-center w-full p-20 xl:p-0 h-full xl:h-screen justify-center bg-tahiti-100 gap-20 md:w-screen'>
             <div className='w-screen h-12 flex flex-col items-center justify-center gap-1'>
                 <h1 className='text-3xl text-white'>Skills</h1>
                 <p className='text-1xl text-tahiti-200'>My Technical level</p>

@@ -32,26 +32,36 @@ function App() {
     useEffect(() => {
         const handleScroll = () => {
             const currentPosition = window.scrollY;
-            if (currentPosition < 700) {
-                setActiveNav("#home");
-            } else if (currentPosition < 1400) {
-                setActiveNav("#about");
-            } else if (currentPosition < 2100) {
-                setActiveNav("#skills");
-            } else if (currentPosition < 2700) {
-                setActiveNav("#qualification");
-            } else if (currentPosition < 4200) {
-                setActiveNav("#portfolio");
-            }else {
-                setActiveNav("#contact");
+            let activeNav;
+
+            switch (true) {
+                case currentPosition < 700:
+                    activeNav = "#home";
+                    break;
+                case currentPosition < 1400:
+                    activeNav = "#about";
+                    break;
+                case currentPosition < 2100:
+                    activeNav = "#skills";
+                    break;
+                case currentPosition < 2700:
+                    activeNav = "#qualification";
+                    break;
+                case currentPosition < 4200:
+                    activeNav = "#portfolio";
+                    break;
+                default:
+                    activeNav = "#contact";
             }
+
+            setActiveNav(activeNav);
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [setActiveNav]);
 
     return (
         <>
