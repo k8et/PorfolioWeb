@@ -162,12 +162,6 @@ export const contactMethods = [
         link: 'mailto:mxmgnchrv@gmail.com',
     },
     {
-        icon: 'bx bxl-whatsapp',
-        title: 'WhatsApp',
-        text: '+380685339687',
-        link: 'https://api.whatsapp.com/send?phone=380685339687&text=Hello,%20more%20information!',
-    },
-    {
         icon: 'bx bxl-telegram',
         title: 'Telegram',
         text: '@mxmgnchrv',
