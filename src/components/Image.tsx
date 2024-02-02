@@ -15,7 +15,6 @@ const profileAnimation = keyframes`
 
 const StyledHomeImage = styled.div`
   background-repeat: no-repeat;
-  z-index: 1000;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 9px rgba(253, 253, 253, 0.3);

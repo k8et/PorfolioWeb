@@ -72,13 +72,13 @@ export const tabContent = [
 ];
 export const programmingData = [
     {name: 'HTML', level: 'Advanced'},
-    {name: 'CSS', level: 'Intermediate'},
+    {name: 'CSS', level: 'Advanced'},
     {name: 'SASS', level: 'Intermediate'},
     {name: 'JavaScript', level: 'Intermediate'},
     {name: 'TypeScript', level: 'Upper-Intermediate'},
-    {name: 'Tailwind', level: 'Intermediate'},
+    {name: 'Tailwind', level: 'Advanced'},
     {name: 'Figma', level: 'Intermediate'},
-    {name: 'Git/GitHub', level: 'Intermediate'},
+    {name: 'Git/GitHub', level: 'Upper-Intermediate'},
 ];
 export const toolsData = [
     {name: 'Firebase', level: 'Intermediate'},
@@ -87,7 +87,7 @@ export const toolsData = [
     {name: 'React Native', level: 'Intermediate'},
     {name: 'Axios', level: 'Intermediate'},
     {name: 'React', level: 'Advanced'},
-    {name: 'Redux', level: 'Beginner'},
+    {name: 'Redux', level: 'Upper-Intermediate'},
     {name: 'Mobx', level: 'Intermediate'},
 ];
 export const portfolioData = [
