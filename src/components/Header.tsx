@@ -14,7 +14,7 @@ const Header: FC<HeaderProps> = (props) => {
 
     return (
         <div
-            className={`bg-tahiti-100 z-10 w-full h-12 text-white flex items-center z-20 ${
+            className={`bg-tahiti-100 z-50 w-full h-12 text-white flex items-center ${
                 isLaptop ? 'justify-between p-5' : 'justify-around'
             } fixed ${isLaptop ? 'bottom-0' : 'top-0'}`}
         >
@@ -49,7 +49,7 @@ const Header: FC<HeaderProps> = (props) => {
                     )}
                 </div>
             ) : (
-                <div className="flex  gap-10">
+                <div className="flex gap-10">
                     {mockNavigationItems.map((navItem, index) => (
                         <a
                             key={index}

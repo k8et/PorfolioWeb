@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const AboutContainer = styled.div`
   display: flex;
-  z-index: 10;
   justify-content: center;
   align-items: center;
   gap: 30px;
