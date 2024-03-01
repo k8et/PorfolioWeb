@@ -67,7 +67,14 @@ export const tabContent = [
         category: 'experience',
         title: "NWS Studio",
         subtitle: "React Developer",
-        date: "12/2022-Present",
+        date: "12/2022-03/2023",
+    },
+    {
+        id: 5,
+        category: 'experience',
+        title: "Freelance",
+        subtitle: "Full Stack Developer",
+        date: "05/2023-Present",
     }
 ];
 export const programmingData = [
@@ -95,7 +102,7 @@ export const portfolioData = [
         category: 'web',
         imageSrc: Music,
         title: "Music",
-        DemoLink: "https://main--wonderful-beijinho-fdc402.netlify.app/",
+        DemoLink: "https://music-web-by-k83t.netlify.app",
         GitLink: "https://github.com/k8et/music"
     },
     {

@@ -21,12 +21,12 @@ const AboutSection = () => {
                     <AboutBox>
                         <AboutIcon className='bx bx-award about__icon'></AboutIcon>
                         <AboutTitle>Experience</AboutTitle>
-                        <AboutSubtitle>1.2 years and counting</AboutSubtitle>
+                        <AboutSubtitle>3 years and counting</AboutSubtitle>
                     </AboutBox>
                     <AboutBox>
                         <AboutIcon className='bx bx-briefcase about__icon'></AboutIcon>
                         <AboutTitle>Completed</AboutTitle>
-                        <AboutSubtitle>11+ Projects</AboutSubtitle>
+                        <AboutSubtitle>15+ Projects</AboutSubtitle>
                     </AboutBox>
                     <AboutBox>
                         <AboutIcon className='bx bx-support about__icon'></AboutIcon>

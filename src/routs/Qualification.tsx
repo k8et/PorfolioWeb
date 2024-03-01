@@ -41,14 +41,15 @@ const Qualification = () => {
                             className={`${
                                 toggleState === content.category ? 'active' : 'hidden'
                             } flex ${
-                                content.id === 1 || content.id === 3 ? 'border-b-2 border-white' : ''
+                                content.id === 1 || content.id === 3 || content.id === 4 ? 'border-b-2 border-white' : ''
                             }`}
                         >
                             <div className="my-4">
                                 <h3 className="text-lg text-white font-medium">{content.title}</h3>
                                 <span className="text-base text-tahiti-200">{content.subtitle}</span>
                                 <div className="text-sm mt-2 text-tahiti-200">
-                                    <i className="uil uil-calendar-alt mr-1"></i> {content.date}
+                                    <i className="uil uil-calendar-alt mr-1"></i>
+                                    {content.date}
                                 </div>
                             </div>
                         </div>
