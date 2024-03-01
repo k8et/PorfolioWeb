@@ -25,7 +25,6 @@ const gradientAnimation = keyframes`
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;
   border-radius: 20px;
-  z-index: 1;
   cursor: pointer;
 
   &:hover {
